@@ -1,0 +1,67 @@
+.opinionContainer{
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+    overflow: hidden;
+
+    .opinionsHeader{
+        h1{
+            font-size: 3em;
+        }
+    }
+
+    .opinionsCnt{
+        display: flex;
+        width: 100%;
+
+        .opiinionBox{
+            min-width: 33%;
+            padding: 20px 30px;
+            box-sizing: border-box;
+
+            .innerBox{
+                height: 100%;
+                -webkit-box-shadow: 7px 7px 10px 5px rgba(0, 0, 0, 0.4);
+                box-shadow: 7px 7px 10px 5px rgba(0, 0, 0, 0.4);
+    
+            .titleCnt{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-top: 3px solid goldenrod;
+                min-height: 115px;
+                padding: 0 25px;
+
+
+                .title{
+                    display: flex;
+                    flex-direction: column;
+
+
+                    .name{
+                        font-size: 30px;
+                        font-weight: 600;
+                        text-align: left;
+                    }
+
+                    .type{
+                        font-size: 18px;
+                        text-align: left;
+                    }
+                }
+
+                .opinionIcon{
+                    font-size:65px;
+                    color: goldenrod;
+                }
+            }
+            .opinion{
+                font-size: 24px;
+                padding: 0 25px 25px 25px;
+                color: grey;
+            }
+        
+        }
+        }
+    }
+}

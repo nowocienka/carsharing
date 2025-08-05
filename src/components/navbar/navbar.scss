@@ -1,0 +1,238 @@
+.navbarContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+    
+
+    .top{
+        background-color:rgb(241 200 97 / 29%);
+        width: 100%;
+        .topLine{
+            color: grey;
+            margin:auto;
+            width: 100%;
+
+            max-width: 1280px;
+            display: flex;
+            justify-content: space-around;
+    
+            .left {
+                font-weight: 400;
+                display: flex;
+                gap: 10px;
+                align-items: center;
+    
+                .topAddres, .topMail, .topTelephone{
+                    display: flex;
+                    cursor:pointer; 
+                }
+                .topAddres:hover, .topMail:hover, .topTelephone :hover{
+                    text-decoration: underline;
+                }
+                
+            }
+    
+            .right {
+                display: flex;
+                gap: 5px;
+    
+                .socialLogo{
+                    cursor: pointer;
+                }
+                .socialLogo:hover{
+                    color: rgba(128, 128, 128, 0.352);
+                }
+            }
+        }
+    }
+    
+    .menuContainer{
+        width:100%;
+        max-width: 1280px;;
+        display: flex;
+        justify-content: space-around;
+        padding: 30px 0;
+        border-radius: 0 0 10px 10px;
+        -webkit-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.4);
+        box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.4);
+        
+
+        .logoCnt{
+            font-weight:900;
+            font-size: 24px;
+            color: rgb(241, 200, 97);
+        }
+        .menuList{
+            list-style: none;
+            display:flex;
+            align-items: center;
+            gap: 15px;
+            padding: 0;
+            margin: 0;
+
+            .menuElement{
+                font-weight: 500;
+                color: grey;
+                font-size: 20px;
+                cursor:pointer;
+                border-bottom: 1px solid rgb(241, 200, 97);
+            }
+
+            .menuElement:hover{
+                border-bottom: 1px solid grey;
+
+            }
+
+            .menuElement:hover{
+                color: grey;
+            }
+        }
+    }
+
+    .pictureContainer{
+        width:100%;
+        max-width:1280px;
+
+        .slider{
+            margin: 50px 0;
+            width:100%;
+            border-radius: 5px;
+        }
+    }
+    
+
+    .reservationLine{
+        background-color: white;
+        width:100%;
+        max-width: 1280px;
+        -webkit-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.4);
+        box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.4);
+        padding: 20px 0;
+        border-radius: 5px;
+        margin-bottom: 50px;
+
+        .reservationCnt{
+            padding: 0 50px;
+            
+            .reservationTop{
+                width: 100%;
+                max-width: 1280px;
+                display: flex;
+                justify-content: space-between;
+                color: grey;
+
+                label{
+                    margin-right: 10px;
+                    font-weight: 400;
+                    font-size: 18px
+                }
+
+                .startPlace{
+                    display: flex;
+                    align-items: center;
+
+                    select{
+                        padding: 5px;
+                        border-radius: 5px;
+                        font-weight: 400;
+                        font-size: 18px;
+                        border: 1px solid grey;
+                        cursor: pointer;
+
+                    }
+                }
+
+                .dateInput{
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+
+                    .date{
+                        display: flex;
+                        border: 1px solid grey;
+                        border-radius: 5px;
+                        padding: 5px;
+                        cursor: pointer;
+                        .icon{
+                            font-size:24px;
+                        }
+                    input{
+                        border: none;
+                        outline: cadetblue;
+                        font-weight: 400;
+                        font-size: 18px;
+                        cursor: pointer;
+                    }
+
+                }
+                .calendar{
+                    position: absolute;
+                    top: 50px;
+                    z-index:2;
+                }
+                }
+                .reservationButton{  
+                    font-weight: 600;
+                    color: rgb(241, 200, 97);
+                    background-color: rgba(241, 200, 97, 0.244);
+                    border: none;
+                    border-radius: 5px;
+                    cursor:pointer;
+                    width: 150px;
+                    font-size: 18px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+
+                    .icon{
+                        font-size: 24px;
+                        font-weight: bold;
+                        color: grey
+                    }
+                   
+                }
+                .reservationButton:hover{
+                    border: 1px solid rgb(241, 200, 97);
+                }
+            }
+            .reservationBottom{
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                color: grey;
+
+                .otherPlace{
+                    padding: 10px 0;
+                    input{
+                        margin-right: 10px;
+                    }
+                }
+
+                label{
+                    margin-right: 10px;
+                    font-weight: 400;
+                    font-size: 18px
+                }
+
+                .endPlace{
+                    display: flex;
+                    align-items: center;
+
+                    select{
+                        padding: 5px;
+                        border-radius: 5px;
+                        font-weight: 400;
+                        font-size: 18px;
+                        border: 1px solid grey;
+                        cursor: pointer;
+
+                    }
+                }
+            } 
+        }
+        
+    }
+}
+

@@ -1,0 +1,112 @@
+.blogContainer{
+    width: 100%;
+    max-width : 1280px;
+    display: flex;
+    margin: auto;
+    gap: 60px;
+    margin-bottom: 50px;
+    
+    .blogItem{
+        width: 33%;
+        box-sizing: border-box;
+        border: 1px solid rgba(128, 128, 128, 0.21);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .top{
+            position: relative;
+
+            .badge{
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                background-color: white;
+                padding: 5px;
+                border-radius: 5px;
+                display: flex;
+                font-weight: 500;
+                cursor: pointer;
+
+                .blogIcon{
+                    color: rgb(241, 200, 97);
+                }
+            }
+
+            .pictureContainer{
+                width: 100%;
+
+                .picture{
+                    width: 100%;
+                }
+            }
+        }
+
+        .bottom{
+            display: flex;
+            flex-direction: column;
+            min-height:430px;
+            justify-content: space-between;
+
+            .authorCnt{
+                display: flex;
+                gap: 10px;
+                padding: 5px 20px;
+
+                .authorIcon{
+                    color: rgb(241, 200, 97);
+                }
+
+                .author{
+                    font-weight: 500;
+                }
+            }
+
+            .title{
+                font-size: 24px;
+                padding: 20px;
+            }
+
+            .text{
+                padding: 20px;
+                font-size: 18px;
+            }
+
+            .more{
+                border: none;
+                height: 50px;
+                font-size: 22px;
+                color: rgb(241, 200, 97);
+                background-color: rgba(241, 200, 97, 0.174);
+                display: flex;
+                align-items: center;
+                gap:20px;
+                justify-content: space-between;
+                cursor: pointer;
+                padding: 20px;
+            }
+
+            .more:hover {
+                background-color: rgba(241, 200, 97, 0.55); 
+            }
+        }
+
+        
+    }
+}
+
+.allBlogs{
+    margin-bottom: 50px;
+    height: 50px;
+    width: 250px;
+    border: none;
+    background-color: rgba(241, 200, 97); 
+    font-weight: 500;
+    font-size: 16px;
+    color: grey;
+    cursor: pointer;
+}
+
+.allBlogs:hover {
+    color: rgba(128, 128, 128, 0.306);
+}

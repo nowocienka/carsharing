@@ -1,0 +1,129 @@
+.footerContainer{
+    width:100%;
+    justify-content: center;
+    background-color: rgb(55, 55, 55);
+    padding: 70px 0 0 0;
+
+    .footer{
+        justify-content: space-evenly;
+
+        .infoFooter{
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            align-items: start;
+            gap:10px;
+            padding: 20px;
+
+            .logo{
+                color: rgb(241, 200, 97);
+                background-color: white;
+                box-sizing: content-box;
+                width: fit-content;
+                padding: 5px 10px;
+                font-weight: 900;
+            }
+
+            .topAddres{
+                display: flex;
+                gap: 5px;
+
+                .address{
+                    text-align: left;;
+                }
+            }
+
+            .topMail{
+                display: flex;
+                gap: 5px;
+            }
+
+            .topTelephone{
+                display:flex;
+                gap: 5px;
+            }
+
+        }
+
+        .citiesFooter{
+            color: white;
+            padding: 20px;
+            
+            .citiesTitle{
+                font-size: 24px;
+                font-weight: 500;
+                text-align: left;
+            }
+
+            .citiesListCnt{
+
+                .citiesList{
+                    list-style-type: none;
+                    text-align: left;
+                    padding: 0px;
+
+                    .city{
+                        padding: 5px 0;
+                    }
+                }
+            }
+        }
+
+        .faqFooter{
+            color: white;
+            padding: 20px;
+
+            .faqTitle{
+                font-size: 24px;
+                font-weight: 500;
+            }
+
+        .faqButtonCnt{
+            display: flex;
+            .faqButton{
+                border: none;
+                width: 150px;
+                margin: 15px 5px;
+                background-color: rgba(241, 200, 97); 
+                color: white;
+                font-size: 18px;
+                cursor:pointer;
+            }
+        }    
+        }
+
+        .socialFooter{
+            width:100%;
+
+            .socialFooterCnt{
+                width:90%;
+                display: flex;
+                justify-content: center;
+                gap: 25px;
+                background-color: rgb(55, 55, 55);
+                border-top: 1px solid grey;
+                padding: 10px 0px;
+                margin: auto;
+
+                .socialLogo{
+                    display:flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 36px;
+                    width: 36px;
+                    height: 36px;
+                    background-color:rgb(140, 142, 130);
+                    border-radius: 50%;
+                    padding: 1px;
+                    cursor: pointer;
+                }
+
+                .socialLogo:hover{
+                    background-color:rgba(140, 142, 130, 0.386);
+                }
+            }
+        }
+
+    }
+}

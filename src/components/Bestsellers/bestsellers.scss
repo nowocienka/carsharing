@@ -1,0 +1,129 @@
+.bestsellerContainer{
+    width:100%;
+    max-width: 1280px;
+    margin: auto;
+    margin-bottom: 50px;
+
+    h1{
+        font-size: 3em;
+    }
+
+    .carsCnt{
+        display: flex;
+        justify-content: space-between;
+        gap:20px;
+
+        .carBox{
+            width: 50%;
+            border: 1px solid rgba(128, 128, 128, 0.4);
+            padding: 20px;
+
+
+            .top {
+                display: flex;
+                justify-content: space-between;
+
+                .left{
+                    width: 50%;
+                    display: flex;
+                    align-items: center;
+
+                    .carPictureCnt{
+                        width: 100%;
+
+                        .carPicture{
+                            width: 100%;
+                            margin:auto;
+                        }
+                    }
+                }
+
+                .right{
+                    width: 40%;
+
+                    .carInfo{
+                        display: flex;
+                        flex-direction: column;
+
+                        .carTitle{
+                            font-size: 20px;
+                            font-weight: 500;
+                            text-align: center;
+                            margin-bottom: 10px;
+                        }
+
+                        .carDetailCnt{
+                            display: flex;
+                            justify-content: space-between;
+                            margin: 5px 0;
+
+                            .icon{
+                                color: grey;
+                                margin: 0 10px;
+                            }
+
+                            .carDetail{
+                                display: flex;
+                                justify-content: space-between;
+                                width: 100%;
+                                align-items: center;;
+
+                                .title{
+                                    margin-left: 5px;
+                                    color: grey;
+                                    font-size: 14px;
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+
+                        
+                    }
+                }
+            }
+
+            .bottom{
+                display: flex;
+                justify-content: space-between;
+                 .left{
+                    display: flex;
+                    flex-direction: column;
+
+                    .priceCnt{
+                        color: grey;
+                        font-size: 24px;
+
+                        .price{
+                            color:goldenrod;
+                            font-weight: 500;
+                        }
+                    }
+
+                    .class{
+                        color: grey;
+                        font-size: 20px;
+                        text-align: left;
+                    }
+                 }
+
+                 .right{
+                    display: flex;
+                    align-items: center;
+                    button{
+                        border: none;
+                        width: 100px;
+                        height: 30px;
+                        font-weight: bold;
+                        background-color: rgba(218, 165, 32, 0.247);
+                        color: goldenrod;
+                        border-radius: 5px;
+                        cursor: pointer;
+                    }
+                    button:hover{
+                        background-color: rgba(218, 165, 32, 0.308);
+                    }
+                 }
+            }
+        }
+    }
+}
